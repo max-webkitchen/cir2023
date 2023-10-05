@@ -1,0 +1,45 @@
+.calendar{
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 4px solid darkblue;
+  }
+
+ 
+ .calendar td {
+    padding: 30px;
+    border: 1.5px solid;
+    text-align: center;
+  }
+  
+  .calendar th {
+    border: 2.5px solid;
+    text-align: center;
+  }
+
+  .math {
+    background-color: lawngreen;
+  }
+  .ang {
+    background-color: aqua;
+  }
+  .elec {
+    background-color: yellow;
+  }
+  .ph {
+    background-color: rgb(255, 68, 68);
+  }
+  .al {
+    background-color: rgb(162, 62, 255);
+  }
+  .pa {
+    background-color: bisque;
+  }
+  .ap {
+    background-color: rgb(255, 0, 255);
+  }
+
+.ho {
+    background-color: lightgray;
+    border: 2px solid;
+}

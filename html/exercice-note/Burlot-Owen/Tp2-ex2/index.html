@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+       
+        <link rel="stylesheet" href="assets/style.css">
+
+    </head>
+
+    <body>
+        <h1>Emploi du Temps</h1>
+        <table class="calendar">
+            <thead>
+                <tr>
+                    <th>Horraire</th>
+                    <th>Lundi</th>
+                    <th>Mardi</th>
+                    <th>Mercredi</th>
+                    <th>Jeudi</th>
+                    <th>Vendredi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="ho">8H-10H</td>
+                    <td rowspan="2" class="math">Math</td>
+                    <td class="al">Algo</td>
+                    <td class="pa">Pause</td>
+                    <td class="math">Math</td>
+                    <td class="ang">Anglais</td>
+                </tr>
+                <tr>
+                    <td class="ho">10H-12H</td>
+                    <td class="math">Math</td>
+                    <td class="ph">Physique</td>
+                    <td rowspan="2" class="ang">Anglais</td>
+                    <td class="elec">Electricité</td>
+                </tr>
+                <tr>
+                    <td class="ho">12H-14H</td>
+                    <td class="pa" colspan="3">Pause</td>
+                    <td class="ph">Physique</td>
+                </tr>
+                <tr>
+                    <td class="ho">14H-16H</td>
+                    <td rowspan="2" class="elec">Electricité</td>
+                    <td class="math">Math</td>
+                    <td class="ph">Physique</td>
+                    <td class="pa" colspan="2">Pause</td>
+                </tr>
+                <tr>
+                    <td class="ho">16H-18H</td>
+                    <td class="ang">Anglais</td>
+                    <td class="pa">Pause</td>
+                    <td class="ph">Physique</td>
+                    <td class="ap">Apéro</td>
+               </tr>
+            </tbody>
+        </table>  
+    </body>
+</html>
