@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form > div {
+            display: block;
+        }
+        form > div label {
+            width: 150px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="get">
+        <div>
+            <label for="prenom">Prenom</label>
+            <input type="text" name="nom" id="prenom" placeholder="votre prenom">
+        </div>
+        <div>
+            <label for="password">password</label>
+            <input type="password" name="motdepasse" id="password" placeholder="votre mdp">
+        </div>
+        <div>
+            <label for="password-repeat">password</label>
+            <input type="password" name="motdepasse" id="password-repeat" placeholder="votre mdp">
+        </div>
+        <div>
+            <select name="profession" id="profession">
+                <option value="liberal">Liberal</option>
+                <option value="test">test</option>
+                <option value="test2">test2</option>
+            </select>
+        </div>
+      
+        <label for="nl-oui">oui</label>
+
+        <input type="radio" name="newsletter" value="oui" id="nl-oui">
+        <label for="nl-non">non</label>
+
+        <input type="radio" name="newsletter" value="non" id="nl-non">
+
+        <label for="nl-na">na</label>
+
+        <input type="radio" name="newsletter" value="na" id="nl-na">
+
+      
+        <input type="password" name="motdepasse" id="" placeholder="votre mot de passe">
+        <input type="date" name="date" id="" placeholder="votre date d'anni">
+
+<div>
+    <label for="message">Message</label>
+    <textarea name="message" id="message" cols="30" rows="10" placeholder="Votre message"></textarea>
+</div>
+
+    <fieldset>
+        <legend>Niveau de langue</legend>
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+    </fieldset>
+
+
+        <input type="submit" value="Envoyer">
+ 
+    </form>
+</body>
+</html>
