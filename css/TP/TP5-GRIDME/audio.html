@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            grid-template-rows: calc(100vh - 100px) 100px;
+            min-height: 100vh;
+            grid-template-areas: 
+            "nav main"
+            "nav footer";
+        }
+        footer {
+            grid-area: footer;
+            background-color: black;
+        }
+        nav {
+            grid-area: nav;
+            background-color: pink;
+        }
+        main {
+            grid-area:main;
+            background-color:plum;
+            overflow: scroll;
+            display: grid;
+            grid-template-rows: 35% 65%;
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "trackinfo"
+            "tracklist";
+        }
+        div.trackinfo {
+            grid-area: trackinfo;
+            background-color: black;
+        }
+        div.tracklist {
+            grid-area: tracklist;
+            background-color: rosybrown;
+            overflow: scroll;
+        }
+
+        div.tracklist li {
+            line-height: 2rem;
+        }
+
+        @media screen and (max-width:600px){
+            body {
+              animation  : shrink-fixed 1s ease;
+            }
+            @keyframes shrink-fixed {
+                    0% {
+                        grid-template-columns: 100px 1fr;
+                    }
+
+                    100% {
+                        grid-template-columns: 0px 1fr;
+                    }
+                }
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="" class="icon"></a></li>
+            <li><a href="" class="icon"></a></li>
+            <li><a href="" class="icon"></a></li>
+            <li><a href="" class="icon"></a></li>
+            <li><a href="" class="icon"></a></li>
+            <li><a href="" class="icon"></a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="trackinfo"></div>
+        <div class="tracklist">
+            <ul>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+            </ul>
+        </div>
+    </main>
+    <footer></footer>
+
+
+</body>
+</html>

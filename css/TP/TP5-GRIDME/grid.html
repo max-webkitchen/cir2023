@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .grid-1 {
+            display: grid;
+            grid-template-rows: 20vw 60vw 100px;
+            grid-template-columns: 100px 1fr 100px;
+            grid-column-gap: 20px;
+            grid-row-gap: 50px;
+            
+        }
+        .header {
+            
+            grid-row-start: 1;
+            grid-row-end:2;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            background-color: pink;
+        }
+        .footer {
+            grid-row-start: 3;
+            grid-row-end:3;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            background-color: red;
+        }
+
+        .content {
+            background-color: purple;
+        }
+
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 2rem;
+            min-height: 100px;
+        }
+
+        .grid-2 > div {
+            background-color: purple;
+        }
+        .grid-2 div.col-2 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            background-color: blue;
+        }
+
+        .grid-col-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            min-height: 200px;
+        }
+
+        .grid-col-2 > div {
+            background-color: rosybrown;
+        }
+
+        .grid-col-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            min-height: 200px;
+        }
+
+        .grid-col-3 > div {
+            background-color:#F8A2C6;
+            padding: 2rem;
+        }
+
+        .grid-special {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(12, 1fr);
+            gap: 2rem;
+            min-height: 50vh;
+        }
+        .grid-special > div {
+            grid-row-start: 1;
+            grid-row-end: 12;
+        }
+
+        .grid-special .line-1 {
+            grid-column-start: 1;
+            grid-column-end: 2;
+          
+           border-right: 1px solid black;
+        }
+        .grid-special .line-2 {
+            grid-column-start: 2;
+            grid-column-end: 3;
+         
+           border-right: 1px solid rebeccapurple;
+        }
+        .grid-special .line-3 {
+            grid-column-start: 3;
+            grid-column-end: 4;
+           border-right: 1px solid slategray;
+        }
+        .grid-special .line-4 {
+            grid-column-start: 4;
+            grid-column-end: 5;
+           border-right: 1px solid slategray;
+        }
+
+        section.hero {
+            display: grid;
+
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            min-height: 100vh;
+            position: relative;
+        }
+
+        .photo {
+            grid-row-start: 1;
+            grid-row-end: 7;
+            grid-column-start: 1;
+            grid-column-end: 5;
+            background-color: rebeccapurple;
+        }
+        .text {
+            grid-row-start: 2;
+            grid-row-end: 6;
+            grid-column-start: 4;
+            grid-column-end: 6;
+            background-color: black;
+            color:white;
+            padding: 2rem;
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+        }
+
+        .films {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+            grid-template-rows: repeat(3, minmax(200px, 1fr)); 
+            gap: 0.1rem;
+            grid-auto-flow:row; 
+            overflow:auto;
+        }
+
+        .films div {
+             background-color: pink;
+
+            min-width: 200px;
+            color:white;
+            font-size: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            object-fit: contain;
+        }
+        .double {
+            grid-column: 1 / 4;
+            grid-row: 1 / 4;
+            background-color: royalblue!important;
+        }
+        .four {
+            grid-column: span 1;
+            grid-row: span 2;
+            background-color: purple!important;
+        }
+        .eleven {
+            grid-column: span 2;
+            grid-row: 3 / 3;
+            background-color: orangered!important;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <div class="photo"></div>
+        <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    </section>
+
+    <section class="films">
+        <div class="double"><img src="https://picsum.photos/600" alt="" srcset=""></div>
+ 
+        <div class="four"><img src="https://picsum.photos/id/452/600" alt="" srcset=""></div>
+        <div><img src="https://picsum.photos/id/789/200" alt="" srcset=""></div>
+        <div><img src="https://picsum.photos/id/563/200" alt="" srcset=""></div>
+       
+        <div><img src="https://picsum.photos/id/45/200" alt="" srcset=""></div>
+        <div><img src="https://picsum.photos/id/965/200" alt="" srcset=""></div>
+        <div><img src="https://picsum.photos/id/67/200" alt="" srcset=""></div>
+
+        <div class="four"><img src="https://picsum.photos/seed/picsum/200/452" alt="" srcset=""></div>
+        <div><img src="https://picsum.photos/id/124/200" alt="" srcset=""></div>
+        <div><img src="https://picsum.photos/id/78/200" alt="" srcset=""></div>
+        <div><img src="https://picsum.photos/id/92/200" alt="" srcset=""></div>
+        <div><img src="https://picsum.photos/id/124/200" alt="" srcset=""></div>
+        <div><img src="https://picsum.photos/id/78/200" alt="" srcset=""></div>
+        <div><img src="https://picsum.photos/id/92/200" alt="" srcset=""></div>
+        <div><img src="https://picsum.photos/id/124/200" alt="" srcset=""></div>
+        <div><img src="https://picsum.photos/id/78/200" alt="" srcset=""></div>
+        <div><img src="https://picsum.photos/id/92/200" alt="" srcset=""></div>
+        <div><img src="https://picsum.photos/id/124/200" alt="" srcset=""></div>
+        <div><img src="https://picsum.photos/id/78/200" alt="" srcset=""></div>
+        <div><img src="https://picsum.photos/id/92/200" alt="" srcset=""></div>
+
+
+
+
+    </section>
+
+
+    
+    <div class="grid-1">
+        <div class="header"></div>
+        <div class="content"></div>
+        <div class="footer"></div>
+    </div>
+
+    <div class="grid-2">
+        <div class="col-2"></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+       
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <div class="grid-col-2">
+        <div></div>
+        <div></div>
+    </div>
+
+    <div class="grid-col-3">
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda aliquam rerum nemo tempore ex! Soluta mollitia perferendis blanditiis delectus aut.</div>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, alias.</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eveniet ipsum numquam voluptates dolore optio!</div>
+    </div>
+
+    <div class="grid-special">
+        <div class="line-1"></div>
+        <div class="line-2"></div>
+        <div class="line-3"></div>
+        <div class="line-4"></div>
+       
+    </div>
+
+
+
+</body>
+</html>

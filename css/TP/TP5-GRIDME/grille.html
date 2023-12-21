@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+      
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+        * {
+            box-sizing: border-box;
+        }
+        :root {
+            --gutterWidth:2px;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        [class^="col"] {
+            /* padding: 2rem; */
+        }
+        .col {
+          background-color: cadetblue;
+            
+        }
+
+        .col img {
+            width: 100%;
+  height: 100%;
+  object-fit: cover;
+        }
+
+        .grille {
+            display: grid;
+            justify-items: stretch;
+            gap:var(--gutterWidth);
+        }
+
+        .grille.columns-2 {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+
+        .grille.columns-3 {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .grille.columns-4 {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .grille.columns-5 {
+            grid-template-columns: repeat(5, 1fr);
+        }
+
+        .grille.columns-6 {
+            grid-template-columns: repeat(6, 1fr);
+        }
+
+        .grille.columns-7 {
+            grid-template-columns: repeat(7, 1fr);
+        }
+
+        .grille.columns-8 {
+            grid-template-columns: repeat(8, 1fr);
+        }
+
+        .grille.columns-9 {
+            grid-template-columns: repeat(9, 1fr);
+        }
+
+        .grille.columns-10 {
+            grid-template-columns: repeat(10, 1fr);
+        }
+
+        .grille.columns-11 {
+            grid-template-columns: repeat(11, 1fr);
+        }
+
+        .grille.columns-12 {
+            /* grid-template-columns: repeat(auto-fill,  minmax(100px, 1fr)); */
+            grid-template-columns: repeat(12, 1fr);
+           
+        }
+
+
+
+        .col-2 {
+            grid-column:span 2;
+            background-color: orange;
+        }
+
+        .col-2-2 {
+            grid-column:span 2;
+            grid-row: span 2;
+        }
+
+        .col-3 {
+            grid-column:span 3;
+            background-color: rgb(91, 203, 211);
+        }
+        .col-3-3 {
+            grid-column:span 3;
+            grid-row: span 3;
+        }
+
+        .col-4 {
+            grid-column:span 4;
+            background-color: rebeccapurple;
+        }
+
+        .col-5 {
+            grid-column:span 5;
+            background-color: rgb(222, 231, 48);
+        }
+
+        .col-5-5 {
+            grid-column:span 5;
+            grid-row:span 5;
+            background-color: rgb(222, 231, 48);
+        }
+
+        .col-6 {
+            grid-column:span 6;
+            background-color: rgb(177, 91, 152);
+        }
+
+        .col-6-6 {
+            grid-column:span 7;
+            grid-row:span 7;
+    
+        }
+
+        .col-7 {
+            grid-column:span 7;
+            background-color: rgb(170, 224, 23);
+        }
+
+        .col-7-7 {
+            grid-column:span 7;
+            grid-row:span 7;
+    
+        }
+
+        .col-8 {
+            grid-column:span 8;
+            background-color: rgb(32, 57, 200);
+        }
+
+        .col-9 {
+            grid-column:span 9;
+            background-color: rgb(95, 128, 114);
+        }
+        .col-10 {
+            grid-column:span 10;
+            background-color: rgb(121, 239, 190);
+        }
+        .col-11 {
+            grid-column:span 11;
+            background-color: rgb(121, 239, 190);
+        }
+
+
+        @media screen and (max-width: 980px) {
+           .grille {
+            grid-template-columns: repeat(6, 1fr)!important;
+           } 
+         
+
+        }
+     
+
+
+
+        @media screen and (max-width: 640px) {
+           .grille {
+            grid-template-columns: repeat(3, 1fr)!important;
+           } 
+         
+
+        }
+        figure {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        figcaption {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0,0,0,.5);
+            color:#fff;
+            height: 100%;
+         
+            visibility: hidden;
+            opacity: 0;
+            transition: top 150ms ease-in, opacity 550ms ease-in;
+            top:-30%;
+        }
+
+        figure:hover > figcaption {
+            visibility: visible;
+            opacity: 1;
+            top: 0;
+        }
+
+        .col.col-5-5 figcaption {
+            font-size: 3rem;
+        }
+
+        .col {
+            position: relative;
+        }
+        .col figcaption {
+            font-size: 1.5rem;
+        }
+
+        .quote {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        font-family: 'Black+Ops+One', sans-serif;
+        font-weight: bolder;
+        font-size: 22vmin;
+        line-height: .7;
+        text-transform: uppercase;
+        text-align: right;
+        padding-right: 0.3em;
+        position: absolute;
+        z-index: 2;
+        color: #000000;
+        background-color: #ffffff;
+        mix-blend-mode: lighten;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+
+
+    <div class="grille columns-12">
+        <div class="col col-5-5"><div class="quote">구성원 Cat Gato...</div><figure><img src="http://placekitten.com/800/800" alt=""><figcaption>Coucou</figcaption></figure></div>
+        <div class="col"><img src="http://placekitten.com/600/600" alt=""></div>
+        <div class="col"><figure><img src="http://placekitten.com/800/800" alt=""><figcaption>Coucou</figcaption></figure></div>
+        <div class="col"><img src="http://placekitten.com/300/300" alt=""></div>
+        <div class="col"></div>
+        <div class="col"><img src="http://placekitten.com/400/400" alt=""></div>
+        <div class="col col-2-2"><img src="http://placekitten.com/500/500" alt=""></div>
+        <div class="col  col-2-2"><img src="http://placekitten.com/300/300" alt=""></div>
+        <div class="col"><img src="http://placekitten.com/300/300" alt=""></div>
+        <div class="col"><img src="http://placekitten.com/300/300" alt=""></div>
+        <div class="col"><img src="http://placekitten.com/300/300" alt=""></div>
+        <div class="col"><img src="http://placekitten.com/300/300" alt=""></div>
+        <div class="col col-3-3"><img src="http://placekitten.com/300/300" alt=""></div>
+        <div class="col"><img src="http://placekitten.com/300/300" alt=""></div>
+        <div class="col"><img src="http://placekitten.com/300/300" alt=""></div>
+        <div class="col"><img src="http://placekitten.com/300/300" alt=""></div>
+        <div class="col"><img src="http://placekitten.com/300/300" alt=""></div>
+        <div class="col"><img src="http://placekitten.com/300/300" alt=""></div>
+        <div class="col"><img src="http://placekitten.com/300/300" alt=""></div>
+        <div class="col"><img src="http://placekitten.com/300/300" alt=""></div>
+        <div class="col"><img src="http://placekitten.com/300/300" alt=""></div>
+        <div class="col"><img src="http://placekitten.com/300/300" alt=""></div>
+        <div class="col"><img src="http://placekitten.com/300/300" alt=""></div>
+        <div class="col"><img src="http://placekitten.com/300/300" alt=""></div>
+        <div class="col"><img src="http://placekitten.com/300/300" alt=""></div>
+        <div class="col"><img src="http://placekitten.com/300/300" alt=""></div>
+        <div class="col"><img src="http://placekitten.com/300/300" alt=""></div>
+        <div class="col"><img src="http://placekitten.com/300/300" alt=""></div>
+        <div class="col"><img src="http://placekitten.com/300/300" alt=""></div>
+        <div class="col col-2-2"><img src="http://placekitten.com/700/700" alt=""></div>
+        <div class="col"><img src="http://placekitten.com/300/300" alt=""></div>
+        <div class="col"><img src="http://placekitten.com/300/300" alt=""></div>
+        <div class="col"><img src="http://placekitten.com/300/300" alt=""></div>
+        <div class="col"><img src="http://placekitten.com/300/300" alt=""></div>
+        <div class="col"><img src="http://placekitten.com/300/300" alt=""></div>
+        <div class="col"><img src="http://placekitten.com/300/300" alt=""></div>
+        <div class="col"><img src="http://placekitten.com/300/300" alt=""></div>
+        <div class="col"><img src="http://placekitten.com/300/300" alt=""></div>
+        <div class="col"><img src="http://placekitten.com/300/300" alt=""></div>
+    </div>
+    
+    <div class="grille columns-2">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+    </div>
+
+    <div class="grille columns-3">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+    </div>
+    <div class="grille columns-3">
+        <div class="col"></div>
+        <div class="col col-2"></div>
+    
+    </div>
+    <div class="grille columns-3">
+        
+        <div class="col col-2"></div>
+        <div class="col"></div>
+    
+    </div>
+
+    <div class="grille columns-4">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col col-2"></div>
+    </div>
+
+    <div class="grille columns-4">
+        <div class="col col-2"></div>
+        <div class="col col-2"></div>
+    </div>
+
+    <div class="grille columns-4">
+        <div class="col"></div>
+        <div class="col col-3"></div>
+    </div>
+
+    <div class="grille columns-5">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col col-3"></div>
+    </div>
+
+    <div class="grille columns-5">
+        <div class="col col-2"></div>
+        <div class="col col-3"></div>
+    </div>
+
+    <div class="grille columns-6">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+    </div>
+
+    <div class="grille columns-6">
+        <div class="col col-2"></div>
+        <div class="col col-2"></div>
+        <div class="col col-2"></div>
+    </div>
+
+    <div class="grille columns-6">
+        <div class="col col-3"></div>
+        <div class="col col-3"></div>
+    </div>
+
+    <div class="grille columns-6">
+        <div class="col col-2"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+    </div>
+
+    <div class="grille columns-6">
+        <div class="col col-2"></div>
+        <div class="col col-2"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+    
+    </div>
+
+    <div class="grille columns-6">
+        <div class="col col-2"></div>
+        <div class="col col-3"></div>
+        <div class="col"></div>
+    </div>
+
+    <div class="grille columns-6">
+        <div class="col col-3"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+    </div>
+
+    <div class="grille columns-6">
+        <div class="col col-4"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+    </div>
+    <div class="grille columns-6">
+        <div class="col col-5"></div>
+        <div class="col"></div>
+    </div>
+    <div class="grille columns-7">
+        <div class="col col-4"></div>
+        <div class="col col-3"></div>
+    </div>
+    <div class="grille columns-10">
+        <div class="col col-4"></div>
+        <div class="col"></div>
+        <div class="col col-3"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+    </div>
+   
+
+
+</body>
+</html>
