@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body {
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+        padding: 0;
+        }
+        .wrapper {
+            display: flex;
+            align-items: stretch;
+        }
+        .wrapper div {
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 0;
+            /* ou ecriture raccourcis flex:1; */
+            
+            /* ou juste flex-basis 100% j'utilise 100% de ma taille autorisé */
+
+            padding: 3rem;
+            display: flex;
+            align-items: center;
+        }
+    
+        .wrapper div:nth-child(1) {
+            background-color: lightblue;
+        }
+        .wrapper div:nth-child(2) {
+            background-color: lightcoral;
+        }
+
+        .wrapper-3 {
+            display: flex;
+            margin: 2rem 0;
+        }
+
+        .wrapper-3 > *{
+            flex: 1;
+            margin: 0 1rem;
+            padding: 2rem;
+        }
+
+        .wrapper-3 div:nth-child(1){
+            background-color: lightcoral;
+            margin-left: 0rem;
+        }
+        .wrapper-3 div:nth-child(2){
+            background-color: rebeccapurple;
+        }
+        .wrapper-3 div:nth-child(3){
+            background-color: tomato;
+        }
+        .wrapper-3 div:nth-child(4){
+            background-color: lightskyblue;
+        }
+        .wrapper-3 div:nth-child(5){
+            background-color: lightsteelblue;
+        }
+
+        .wrapper-3 div:last-child{
+            margin-right: 0rem;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: auto;
+        }
+        
+       
+    </style>
+</head>
+<body>
+    <main>
+        <div class="wrapper">
+            <div><h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </h2></div>
+            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, cum blanditiis voluptas vero, laboriosam rerum quasi praesentium earum eos nesciunt quas, tempore dolores nulla. Obcaecati aspernatur omnis doloremque unde optio.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, cum blanditiis voluptas vero, laboriosam rerum quasi praesentium earum eos nesciunt quas, tempore dolores nulla. Obcaecati aspernatur omnis doloremque unde optio. Magnam, cum blanditiis voluptas vero, laboriosam rerum quasi praesentium earum eos nesciunt quas, tempore dolores nulla. Obcaecati aspernatur omnis doloremque unde optio.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, cum blanditiis voluptas vero, laboriosam rerum quasi praesentium earum eos nesciunt quas, tempore dolores nulla. Obcaecati aspernatur omnis doloremque un</div>
+        </div>
+
+        <div class="wrapper-3">
+            <div><h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </h2></div>
+            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, cum blanditiis voluptas vero, laboriosam rerum quasi praesentium earum eos nesciunt quas, tempore dolores nulla. Obcaecati aspernatur omnis doloremque unde optio.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, cum blanditiis voluptas vero, laboriosam rerum quasi praesentium earum eos nesciunt quas, tempore dolores nulla. Obcaecati aspernatur omnis doloremque unde optio. Magnam,</div>
+            <div>Lorem, ipsum dolor si doloremque unde optio.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, cum blanditiis voluptas vero, laboriosam rerum quasi praesentium earum eos nesciunt quas, tem</div>
+        </div>
+       
+    </main>
+</body>
+</html>
