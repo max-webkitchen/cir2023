@@ -1,0 +1,152 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+/* Custom code */
+a {
+    color:#F9AB33;
+    border-bottom:1px dotted;
+}
+a:hover {
+    color:#608080;
+}
+
+nav , footer {
+    background-color:#783F27;
+    color:#F9AB33;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+header nav ul li a {
+    padding: 0.5rem;
+    display: inline-block;
+}
+
+header .banner {
+    background-image: url(../img/croissants_banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 20vh;
+    min-height: 200px;
+    text-align: center;
+    color:white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+
+
+
+
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+main {
+    padding: 2rem 0;
+    font-family: 'Stint Ultra Expanded', cursive;
+}
+
+main .content h1 {
+    font-size: 1.5rem;
+    color:#555555;
+    margin-bottom: 2rem;
+}
+
+main .content {
+    border: double #EADDC4;
+    border-radius: 25px;
+    padding: 1.5rem;
+}
+
+.product {
+    margin-bottom: 2rem;
+}
+
+.product h2 {
+    color:#7A0002;
+    border-left: 4px solid #7A0002;
+    border-top: 1px solid #7A0002;;
+    font-size: 1.3rem;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+
+.hours{
+    margin-top: 2rem;
+    background-color:#F6F3ED;
+    padding: 1rem;
+}
+
+.hours ul li span {
+    color:#783F27;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.hours ul li {
+    margin-bottom: 0.5rem;
+}
+
+
+
+footer {
+    padding: 0.5rem;
+}

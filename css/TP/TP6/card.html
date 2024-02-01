@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* chargement typo externe */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+        * {
+            box-sizing: border-box;
+            font-family: 'Montserrat';
+        }
+
+
+
+body {
+    margin: 0;
+    padding: 0;  
+}
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 32px 48px -16px rgba(0,0,0,.12);
+            background-color: #fff;
+        }
+        .card--header {
+
+        }
+
+        .card--header figure { 
+            padding: 0;
+            margin: 0;
+        }
+
+        .card--header figure img { 
+          width: 100%;
+          max-height: 250px;
+          height: auto;
+          object-fit: cover;
+        }
+
+        .card--content {
+            padding: .5rem 1rem 1rem;
+        }
+
+        .btn {
+            background-color: ;
+        }
+
+        .date, .description {
+            font-size: 12px;
+            color:rgba(38,38,52,.6);
+        }
+        h3 {
+            font-size: 20px;
+            color:#262634;
+            margin: 0;
+        }
+        p.description {
+            font-size: 14px;
+        }
+
+        .grille {
+            display: grid;
+            gap:20px;
+        }
+
+        .grille-100 {
+            grid-template-columns: repeat(100,1fr);
+        }
+        .grille-12 {
+            grid-template-columns: repeat(12,1fr);
+        }
+
+        .grille-3 {
+            grid-template-columns: repeat(3,1fr);
+        }
+
+        .grille-6 {
+            grid-template-columns: repeat(6,1fr);
+        }
+        .grille-2 {
+            grid-template-columns: repeat(2,1fr);
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: auto;
+        }
+
+    </style>
+</head>
+<body>
+
+
+<section>
+    <div class="container">
+        <div class="grille grille-3">
+            <div class="card">
+                <div class="card--header">
+                    <figure>
+                        <img src="assets/img/content/8f173581ca5911b56516025d46acc1628ebe8209.png" alt="">
+                    </figure>
+                </div>
+                <div class="card--content">
+                    <p class="date">11 janvier 2024</p>
+                    <h3>Titre niveau 3</h3>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque natus esse maxime omnis magnam quis at odio enim voluptates incidunt, mollitia culpa placeat cupiditate atque.</p>
+                    <a href="" class="btn">Lire la suite</a>
+        
+                </div>
+            </div>
+            <div class="card">
+                <div class="card--header">
+                    <figure>
+                        <img src="assets/img/content/8f173581ca5911b56516025d46acc1628ebe8209.png" alt="">
+                    </figure>
+                </div>
+                <div class="card--content">
+                    <p class="date">11 janvier 2024</p>
+                    <h3>Titre niveau 3</h3>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque natus esse maxime omnis magnam quis at odio enim voluptates incidunt, mollitia culpa placeat cupiditate atque.</p>
+                    <a href="" class="btn">Lire la suite</a>
+        
+                </div>
+            </div>
+            <div class="card">
+                <div class="card--header">
+                    <figure>
+                        <img src="assets/img/content/8f173581ca5911b56516025d46acc1628ebe8209.png" alt="">
+                    </figure>
+                </div>
+                <div class="card--content">
+                    <p class="date">11 janvier 2024</p>
+                    <h3>Titre niveau 3</h3>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque natus esse maxime omnis magnam quis at odio enim voluptates incidunt, mollitia culpa placeat cupiditate atque.</p>
+                    <a href="" class="btn">Lire la suite</a>
+        
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+    
+</body>
+</html>
