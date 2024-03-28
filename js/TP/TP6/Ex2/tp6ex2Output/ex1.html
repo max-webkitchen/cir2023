@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Notes des étudiants</title>
+        <meta charset="utf-8">
+		<link rel="stylesheet" href="styles.css">
+    </head>
+    <h1> Notes des étudiants </h1>
+    <body>
+	    <table>
+   			<tr>
+       			<th>Semestre</th>
+       			<th>Etudiant</th>
+       			<th>Note</th>
+   			</tr>
+   			<tr>
+       			<td>S1</td>
+       			<td>E1</td>
+       			<td>18</td>
+   			</tr>
+   			<tr>
+       			<td>S1</td>
+       			<td>E2</td>
+       			<td>7</td>
+   			</tr>
+   			<tr>
+       			<td>S2</td>
+       			<td>E1</td>
+       			<td>17</td>
+   			</tr>
+   			<tr>
+       			<td>S2</td>
+       			<td>E2</td>
+       			<td>8</td>
+   			</tr>
+   			<tr>
+       			<td>S3</td>
+       			<td>E1</td>
+       			<td>16</td>
+   			</tr>
+   			<tr>
+       			<td>S3</td>
+       			<td>E2</td>
+       			<td>9</td>
+   			</tr>
+   			<tr>
+       			<td>S4</td>
+       			<td>E1</td>
+       			<td>13</td>
+   			</tr>
+   			<tr>
+       			<td>S4</td>
+       			<td>E2</td>
+       			<td>4</td>
+   			</tr>
+   			<tr>
+       			<td>S5</td>
+       			<td>E1</td>
+       			<td id="s5e1note">12</td>
+   			</tr>
+   			<tr>
+       			<td>S5</td>
+       			<td>E2</td>
+       			<td id="s5e2note">5</td>
+   			</tr>
+   			<tr>
+       			<td>S6</td>
+       			<td>E1</td>
+       			<td>14</td>
+   			</tr>
+   			<tr>
+       			<td>S6</td>
+       			<td>E2</td>
+       			<td>6</td>
+   			</tr>
+   			<tr>
+       			<td>S7</td>
+       			<td>E1</td>
+       			<td>12</td>
+   			</tr>
+   			<tr>
+       			<td>S7</td>
+       			<td>E2</td>
+       			<td>5</td>
+   			</tr>
+   			<tr>
+       			<td>S8</td>
+       			<td>E1</td>
+       			<td>10</td>
+   			</tr>
+   			<tr>
+       			<td>S8</td>
+       			<td>E2</td>
+       			<td>4</td>
+   			</tr>
+   			<tr>
+       			<td>S9</td>
+       			<td>E1</td>
+       			<td>13</td>
+   			</tr>
+   			<tr>
+       			<td>S9</td>
+       			<td>E2</td>
+       			<td>7</td>
+   			</tr>
+   			<tr>
+       			<td>S10</td>
+       			<td>E1</td>
+       			<td>15</td>
+   			</tr>
+   			<tr>
+       			<td>S10</td>
+       			<td>E2</td>
+       			<td>3</td>
+   			</tr>
+		</table>
+		</br>
+		<input type="button" value="Titre de la page" onclick="titre()">
+		<input type="button" value="Nombre de lignes" onclick="nblignes()">
+		<input type="button" value="Nombre de colonnes" onclick="nbcol()">
+		<input type="button" value="Nombre de semestres" onclick="nbsem()">
+		<input type="button" value="Note S5 de E1" onclick="s5e1()">
+		<input type="button" value="Note S5 de E2" onclick="s5e2()">
+		<input type="button" value="Modifier la note S5 de E1" onclick="change()">
+		<input type="button" value="Ajouter des commentaires sur les notes" onclick="comment()">
+		<p id="p1"> </p>
+        <script>
+        	function titre(){
+        		var t = document.title;
+        		document.getElementById("p1").innerHTML='Le titre de la page est : ' + t;
+        	}
+        	function nblignes(){
+        		var tableaup = document.getElementsByTagName('tr');
+        		var n=tableaup.length-1;
+        		document.getElementById("p1").innerHTML='Notre page contient ' + n + ' lignes';
+        	}
+        	function nbcol(){
+        		var tableaup = document.getElementsByTagName('th');
+        		var n = tableaup.length;
+            	document.getElementById("p1").innerHTML='Notre page contient ' + n + ' colonnes';
+        	}
+       		function nbsem(){
+        		var tableaup = document.getElementsByTagName('tr');
+        		var n = (tableaup.length-1)/2;
+            	document.getElementById("p1").innerHTML='Il existe ' + n + ' semestres';
+        	}
+        	function s5e1(){
+        		var n = document.getElementById("s5e1note").innerHTML;
+        		document.getElementById("p1").innerHTML='La note de S5 de E1 est ' + n ;
+        	}
+        	function s5e2(){
+        		var n = document.getElementById("s5e2note").innerHTML;
+        		document.getElementById("p1").innerHTML='La note de S5 de E2 est ' + n ;
+        	}
+			function change(){
+				var e = document.getElementById('s5e1note');
+				e.innerHTML = ' 14';
+				e.style.color = 'red';
+				e.style.fontSize = '20px';
+            }
+			function comment(){				
+				//On crée un élément de type textarea
+				var input = document.createElement('textarea');
+				input.setAttribute('cols',100);
+				input.setAttribute('rows', 7);
+				var para1 = document.getElementById('p1');
+				document.body.insertBefore(input, para1);
+				var button = document.createElement("button");
+				var t = document.createTextNode("Envoyer"); //Create a text node
+				button.appendChild(t);  //Append the text to <button>
+				document.body.insertBefore(button, para1);
+            }			
+        </script>
+    </body>
+</html>
