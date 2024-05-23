@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <style>
+        html, body {
+    height: 100%;
+}
+
+      body {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+    background-color:white;
+    box-shadow: 0px 0px 10px -3px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+.form-floating {
+    margin-bottom: 2rem;
+}  
+#bio {
+    height: 250px;
+}
+#counter {
+    margin-bottom: 2rem;
+    font-size: .8rem;
+}
+
+#viewMessage {
+    background: white;
+    padding: 1rem;
+    width: 300px;
+    height: 100vh;
+}
+
+#viewMessage p {
+    border-radius: 3px;
+    background-color: #e9e9e9;
+    font-size: .75rem;
+    width: 90%;
+    padding: 0.5rem;
+    position: relative;
+    word-wrap: break-word;
+}
+#viewMessage p:after {
+    content:"";
+    width: 10px;
+    height: 10px;
+    display: block;
+    position: absolute;
+    bottom:-5px;
+    left: 90%;
+    background-color: #e9e9e9;
+    transform: rotate(45deg);
+}
+
+#viewMessage p:nth-of-type(2n){
+    background-color:#dadada;
+    right:-30px
+}
+#viewMessage p:nth-of-type(2n):after{
+    left: 10%;
+    background-color: #dadada;
+}
+
+
+    </style>
+
+</head>
+<body class="bg-primary">
+
+       
+<main class="form-signin">
+    <form class="text-center" id="form">
+      <span>⛑️</span>
+      <h1 class="h3 mb-3 fw-normal">Profile</h1>
+  
+      <div class="form-floating">
+        <textarea class="form-control" id="bio" placeholder="name@example.com"></textarea>
+        <label for="floatingInput">Courte bio moins de 140 caractères</label>
+      </div>
+      <div id="counter"></div>
+      
+  
+      
+      <button class="w-100 btn btn-lg btn-primary" type="submit" id="btnSend">Envoyer</button>
+     
+    </form>
+  </main>
+
+  <div id="viewMessage"></div>
+  
+  <script src="app.js"></script>
+    
+</body>
+</html>
