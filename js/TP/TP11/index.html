@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="main.js" defer></script>
+    <style>
+        .albums {
+            display: flex;
+            gap:10px;
+            overflow-x: scroll;
+        }
+        .album {
+            flex:1;
+            flex-shrink: 0;
+        }
+        .album img{
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="albums-container"></div>
+
+    <template id="album-template">
+        <div class="album">
+          <img src="" alt="">
+          <h3></h3>
+          <p></p>
+        </div>
+      </template>
+</body>
+</html>

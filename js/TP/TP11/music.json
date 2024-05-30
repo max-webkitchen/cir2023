@@ -1,0 +1,114 @@
+{
+    "genres": [
+      {
+        "genre": "Rock",
+        "albums": [
+          {
+            "title": "The Dark Side of the Moon",
+            "artist": "Pink Floyd",
+            "cover_url": "https://upload.wikimedia.org/wikipedia/en/3/3b/Dark_Side_of_the_Moon.png"
+          },
+          {
+            "title": "Led Zeppelin IV",
+            "artist": "Led Zeppelin",
+            "cover_url": "https://upload.wikimedia.org/wikipedia/en/8/8a/Led_Zeppelin_IV.jpg"
+          },
+          {
+            "title": "Back in Black",
+            "artist": "AC/DC",
+            "cover_url": "https://upload.wikimedia.org/wikipedia/en/4/45/ACDC_Back_in_Black.png"
+          },
+          {
+            "title": "Nevermind",
+            "artist": "Nirvana",
+            "cover_url": "https://upload.wikimedia.org/wikipedia/en/b/b7/NirvanaNevermindalbumcover.jpg"
+          },
+          {
+            "title": "Appetite for Destruction",
+            "artist": "Guns N' Roses",
+            "cover_url": "https://upload.wikimedia.org/wikipedia/en/c/c9/GunsnRosesAppetiteforDestructionalbumcover.jpg"
+          },
+          {
+            "title": "Rumours",
+            "artist": "Fleetwood Mac",
+            "cover_url": "https://upload.wikimedia.org/wikipedia/en/f/fb/FMacRumours.PNG"
+          },
+          {
+            "title": "The Wall",
+            "artist": "Pink Floyd",
+            "cover_url": "https://upload.wikimedia.org/wikipedia/en/1/13/PinkFloydWallCoverOriginalNoText.jpg"
+          },
+          {
+            "title": "Hotel California",
+            "artist": "Eagles",
+            "cover_url": "https://upload.wikimedia.org/wikipedia/en/4/49/Hotelcalifornia.jpg"
+          },
+          {
+            "title": "A Night at the Opera",
+            "artist": "Queen",
+            "cover_url": "https://upload.wikimedia.org/wikipedia/en/4/4b/Queen_A_Night_at_the_Opera.png"
+          },
+          {
+            "title": "Born to Run",
+            "artist": "Bruce Springsteen",
+            "cover_url": "https://upload.wikimedia.org/wikipedia/en/9/9f/Born_to_Run_(Front_Cover).jpg"
+          }
+        ]
+      },
+      {
+        "genre": "Rap",
+        "albums": [
+          {
+            "title": "Illmatic",
+            "artist": "Nas",
+            "cover_url": "https://upload.wikimedia.org/wikipedia/en/2/27/IllmaticNas.jpg"
+          },
+          {
+            "title": "The Chronic",
+            "artist": "Dr. Dre",
+            "cover_url": "https://upload.wikimedia.org/wikipedia/en/1/19/Dr.DreTheChronic.jpg"
+          },
+          {
+            "title": "To Pimp a Butterfly",
+            "artist": "Kendrick Lamar",
+            "cover_url": "https://upload.wikimedia.org/wikipedia/en/4/4a/Kendrick_Lamar_-_To_Pimp_a_Butterfly.png"
+          },
+          {
+            "title": "Good Kid, M.A.A.D City",
+            "artist": "Kendrick Lamar",
+            "cover_url": "https://upload.wikimedia.org/wikipedia/en/a/a3/Kendrick_Lamar_-_Good_Kid%2C_M.A.A.D_City.png"
+          },
+          {
+            "title": "Ready to Die",
+            "artist": "The Notorious B.I.G.",
+            "cover_url": "https://upload.wikimedia.org/wikipedia/en/9/97/Ready_To_Die.jpg"
+          },
+          {
+            "title": "The Marshall Mathers LP",
+            "artist": "Eminem",
+            "cover_url": "https://upload.wikimedia.org/wikipedia/en/6/6b/The_Marshall_Mathers_LP.jpg"
+          },
+          {
+            "title": "Reasonable Doubt",
+            "artist": "Jay-Z",
+            "cover_url": "https://upload.wikimedia.org/wikipedia/en/2/25/Reasonable_Doubt_New.jpg"
+          },
+          {
+            "title": "Enter the Wu-Tang (36 Chambers)",
+            "artist": "Wu-Tang Clan",
+            "cover_url": "https://upload.wikimedia.org/wikipedia/en/1/10/Wu-TangClanEntertheWu-Tangalbumcover.jpg"
+          },
+          {
+            "title": "The Miseducation of Lauryn Hill",
+            "artist": "Lauryn Hill",
+            "cover_url": "https://upload.wikimedia.org/wikipedia/en/5/55/LaurynHillTheMiseducationofLaurynHillalbumcover.jpg"
+          },
+          {
+            "title": "Doggystyle",
+            "artist": "Snoop Dogg",
+            "cover_url": "https://upload.wikimedia.org/wikipedia/en/a/a0/SnoopDoggyDoggDoggystyle.jpg"
+          }
+        ]
+      }
+    ]
+  }
